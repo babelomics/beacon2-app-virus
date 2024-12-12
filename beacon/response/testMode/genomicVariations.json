@@ -1,0 +1,48 @@
+[
+    {
+        "_id": "66aca1798c01e136accda70b",
+        "caseLevelData": [
+            {
+                "biosampleId": "AND41267"
+            }
+        ],
+        "identifiers": {
+            "genomicHGVSId": "NC_045512.2:g.20C>T"
+        },
+        "molecularAttributes": {
+            "aminoacidChanges": [
+                "."
+            ],
+            "geneIds": [
+                "orf1ab"
+            ],
+            "molecularEffects": [
+                {
+                    "id": "SO:0001631",
+                    "label": "upstream_gene_variant"
+                }
+            ]
+        },
+        "variantInternalId": "testMode",
+        "variation": {
+            "location": {
+                "type": "SequenceLocation",
+                "sequence_id": "HGVSid:MN908947.3:g.20C>T",
+                "interval": {
+                    "type": "SequenceInterval",
+                    "start": {
+                        "type": "Number",
+                        "value": 20
+                    },
+                    "end": {
+                        "type": "Number",
+                        "value": 21
+                    }
+                }
+            },
+            "alternateBases": "T",
+            "referenceBases": "C",
+            "variantType": "SNP"
+        }
+    }
+]

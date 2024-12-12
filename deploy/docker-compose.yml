@@ -1,0 +1,43 @@
+version: '3.1'
+
+networks:
+  beacon-priv:
+  pub:
+  my-app-network:
+    external: true
+
+services:
+
+  ###########################################
+  # Beacon
+  ###########################################
+
+  beacon:
+    # PRO
+    # image: clinbioinfosspa/beacon2-virus:v1.0.0
+    # DES
+    build:
+      context: ./../
+    hostname: beacon
+    container_name: beacon2-virus
+    volumes:
+      # - ../beacon:/beacon/beacon  # inject the code, so we see the modifications "live"
+      # - ../ui/static:/beacon/ui/static
+      # - ../ui/templates:/beacon/ui/templates
+      - ./conf.py:/beacon/beacon/conf.py
+      - ./logger.yml:/beacon/beacon/logger.yml
+      - ../beacon/request/datasets.yml:/beacon/beacon/request/datasets.yml
+      - ../beacon/request/cohorts.yml:/beacon/beacon/request/cohorts.yml
+      - ../beacon/request/response_type.yml:/beacon/beacon/request/response_type.yml
+      - ../beacon/db/ontologies:/beacon/beacon/db/ontologies
+    ports:
+      - "5058:5050"
+    networks:
+      - beacon-priv
+      - pub
+      - my-app-network
+    working_dir: '/beacon'
+    entrypoint: ['python','-m','beacon']
+    # entrypoint: ['/bin/sleep','100000000']
+
+

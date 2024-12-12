@@ -1,0 +1,26 @@
+[
+  {
+    "createDateTime": "2024-07-01T12:00:00Z",
+    "dataUseConditions": {
+      "duoDataUse" : [
+        {
+          "id" : "NCIT:C189104",
+          "label" : "SARS-CoV-2 Sequencing.",
+          "version" : "2024-07-01",
+          "modifiers" : [
+            {
+              "id" : "DUO:0000004",
+              "label" : "no restriction"
+            }
+          ]
+        }
+      ]
+    },
+    "description": "Genome sequencing of the SARS-CoV-2 virus for the monitoring and management of the Covid-19 epidemic in Andalusia and rapid generation of prognostic biomarkers and response to treatment",
+    "externalUrl": "https://www.clinbioinfosspa.es/projects/covseq/",
+    "id": "testMode",
+    "name": "SARS-CoV-2",
+    "updateDateTime": "2024-07-01T12:00:00Z",
+    "version": "v1.0"
+  }
+]

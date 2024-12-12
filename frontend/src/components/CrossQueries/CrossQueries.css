@@ -1,0 +1,161 @@
+.crossQueriesForm {
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* margin-right: 30px; */
+  align-content: center;
+  align-items: flex-start;
+  border: 1px solid #3176b1;
+  border-radius: 19px;
+}
+
+select {
+  background: white;
+  border: 2px solid #f3f4ff;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 150px;
+  margin-left: 10px;
+  height: 29px;
+  box-shadow: none;
+  /* box-shadow: 1px 2px 2px #cecece; */
+  cursor: pointer;
+  border: 1px solid #3176b1;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.inputId {
+  background: white;
+  border: 2px solid #f3f4ff;
+  font-size: medium;
+  border-radius: 5px;
+  width: 200px;
+  margin-left: 10px;
+  height: 22px;
+  box-shadow: 1px 2px 2px #cecece;
+}
+
+.divCrossQueries {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  width: 100vw;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.goBackCrossQ {
+  cursor: pointer;
+  background: rgb(255 255 255);
+  border: 2px 2px 2px 0px solid #f3f4ff;
+  font-size: medium;
+  border-radius: 5px;
+  width: 100px;
+  height: 35px;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  margin-top: 30px;
+  margin-right: 3px;
+}
+
+.goBackCrossQ:hover {
+  background-color: rgb(228, 236, 250);
+  box-shadow: 1px 1px 1px 1px #2269bf;
+  border: solid #2269bf;
+}
+
+.crossQueriesForm label {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.formButton {
+  cursor: pointer;
+  background: rgb(255 255 255);
+  border: 2px 2px 2px 0px solid #f3f4ff;
+  font-size: medium;
+  border-radius: 5px;
+  width: 100px;
+  height: 35px;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  margin-top: 30px;
+  margin-left: 3px;
+}
+
+.formButton:hover {
+  background-color: rgb(228, 236, 250);
+  box-shadow: 1px 1px 1px 1px #2269bf;
+  border: solid #2269bf;
+}
+
+h5 {
+  color: rgb(209, 66, 66);
+  font-weight: bold;
+  width: fit-content;
+  /* width: 150%; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  font-size: 14px;
+}
+
+h5:hover {
+  color: rgb(118, 151, 228);
+  font-weight: bold;
+}
+
+.preCrossQueries {
+  margin-left: 30px;
+}
+
+.preCrossQueries p {
+  font-size: 11px;
+  background: #e5e5e5;
+  color: black;
+  padding: 20px;
+}
+
+@media (max-width: 760px) {
+  select {
+    font-size: 13px;
+    width: 104px;
+    height: 21px;
+  }
+  h14 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+      'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+      'Helvetica Neue', sans-serif;
+    font-size: 13px;
+    color: #64646a;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .crossQueriesForm {
+    padding: 34px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* margin-right: 30px; */
+    align-content: center;
+    align-items: flex-start;
+    border: 1px solid #3176b1;
+    border-radius: 19px;
+  }
+
+  .inputId {
+    background: white;
+    border: 2px solid #f3f4ff;
+    font-size: 12px;
+    border-radius: 5px;
+    width: 200px;
+    margin-left: 10px;
+    height: 22px;
+    box-shadow: 1px 2px 2px #cecece;
+  }
+}
